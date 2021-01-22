@@ -125,3 +125,34 @@ li.list-item:nth-child(5){
 .btn-group i.fas.fa-angle-right{
     right: 0;
 }
+ul.controlmovie {
+    height: 35px;
+    width: 169px;
+    /* background: red; */
+    bottom: 30px;
+    z-index: 100;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    gap: 4px;
+}
+ul.controlmovie li {
+    height: 30px;
+    width: 30px;
+    border: 3px solid gray;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-indent: -9999px;
+}
+ul.controlmovie li.active{
+    border: 3px solid white;
+}
